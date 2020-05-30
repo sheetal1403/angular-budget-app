@@ -1,0 +1,17 @@
+<div class="budget-item-section">
+  <!-- <div class="budget-item" [class.income] = "isIncome" [class.expense] = "!isIncome"> ALSO WORKS-->
+  <div class="budget-item" [ngClass] = "isIncome ? 'income' : 'expense'">
+
+    <div class="description">
+      <p>Test</p>
+    </div>
+
+    <div class="amount">
+      <p>100</p>
+    </div>
+
+  </div>
+
+  <div class="x-icon-button"></div>
+
+</div>
