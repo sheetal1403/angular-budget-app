@@ -3,7 +3,7 @@
 @charset "utf-8";
 
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700 | Lato:300,900');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Lato:300,900');
 
 // Set your brand colors
 $purple: #8A4D76;
@@ -21,9 +21,10 @@ $link: $purple;
 
 
 // Update some of Bulma's component variables
-$body-background-color: white;
+$body-background-color:white;
 $control-border-width: 2px;
-$input-border-color: $light-grey;
+$input-background-color: $light-grey;
+$input-border-color: transparent;
 $input-shadow: none;
 
 // Import only what you need from Bulma
