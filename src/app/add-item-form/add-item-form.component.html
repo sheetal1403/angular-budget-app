@@ -1,10 +1,18 @@
-<form>
+<form  (ngSubmit) = onSubmit(itemForm) #itemForm = "ngForm">
   <div class="field is-horizontal">
     <div class="field-body">
 
       <div class="field is-narrow">
         <p class="control">
-          <input class="input" style="width: 100px;" type="number" placeholder="Amount">
+          <input
+            class="input"
+            style="width: 100px;"
+            type="number"
+            placeholder="Amount"
+            name="amount"
+            [ngModel]="item.amount"
+            required
+            >
           <span class="icon is-small is-left">
             <i class="fas fa-user"></i>
           </span>
@@ -13,7 +21,13 @@
 
       <div class="field">
         <p class="control">
-          <input class="input"  type="text" placeholder="Description">
+          <input
+            class="input"
+            type="text"
+            placeholder="Description"
+            name="description"
+            [ngModel]="item.description"
+            required>
           <span class="icon is-small is-left">
             <i class="fas fa-user"></i>
           </span>
@@ -22,7 +36,7 @@
 
       <div class="field is-narrow">
         <p class="control">
-          <button class="button is-primary">Add</button>
+          <button type="submit" class="button is-primary" [disabled]="!itemForm.valid">Add</button>
         </p>
 
       </div>

@@ -3,11 +3,11 @@
   <div class="budget-item" [ngClass] = "isIncome ? 'income' : 'expense'">
 
     <div class="description">
-      <p>Test</p>
+      <p>{{ item.description }}</p>
     </div>
 
     <div class="amount">
-      <p>100</p>
+      <p>{{ item.amount }}</p>
     </div>
 
   </div>
