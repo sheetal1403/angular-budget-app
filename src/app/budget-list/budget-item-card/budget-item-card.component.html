@@ -1,6 +1,6 @@
 <div class="budget-item-section">
   <!-- <div class="budget-item" [class.income] = "isIncome" [class.expense] = "!isIncome"> ALSO WORKS-->
-  <div class="budget-item" [ngClass] = "item.amount >= 0 ? 'income' : 'expense'">
+  <div class="budget-item" (click)="onCardClick()" [ngClass] = "item.amount >= 0 ? 'income' : 'expense'">
 
     <div class="description">
       <p>{{ item.description }}</p>

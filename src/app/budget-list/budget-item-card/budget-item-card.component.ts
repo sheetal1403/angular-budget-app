@@ -10,6 +10,7 @@ import { EventEmitter } from '@angular/core';
 export class BudgetItemCardComponent implements OnInit {
 
   @Output() deleteItemEvent: EventEmitter<any> = new EventEmitter<any>();
+  @Output() cardClick: EventEmitter<any> = new EventEmitter<any>();
 
   @Input() isIncome: boolean;
   @Input() item: BudgetItem;
@@ -24,6 +25,10 @@ export class BudgetItemCardComponent implements OnInit {
   deleteItem(){
     // console.log('From card '+ this.id)
     this.deleteItemEvent.emit();
+  }
+
+  onCardClick(){
+    this.cardClick.emit();
   }
 
 }

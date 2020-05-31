@@ -22,7 +22,7 @@ export class AddItemFormComponent implements OnInit {
   onSubmit(form: NgForm){
     // console.log(form);
     const budgetItem = form.value;
-    console.log(budgetItem);
+
     this.formSubmit.emit(budgetItem);
     form.reset();
 

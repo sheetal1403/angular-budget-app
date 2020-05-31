@@ -8,6 +8,9 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { AddItemFormComponent } from './add-item-form/add-item-form.component';
 import { BudgetListComponent } from './budget-list/budget-list.component';
 import { BudgetItemCardComponent } from './budget-list/budget-item-card/budget-item-card.component';
+import { EditItemModalComponent } from './edit-item-modal/edit-item-modal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog'
 
 
 
@@ -18,12 +21,15 @@ import { BudgetItemCardComponent } from './budget-list/budget-item-card/budget-i
     MainPageComponent,
     AddItemFormComponent,
     BudgetListComponent,
-    BudgetItemCardComponent
+    BudgetItemCardComponent,
+    EditItemModalComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

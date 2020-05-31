@@ -16,7 +16,10 @@
 
  <hr style="margin-top: 0;">
 
-<app-budget-list [budgetItems] = "budgetItems" (delete) = "deleteItem($event)"></app-budget-list>
+<app-budget-list
+  [budgetItems] = "budgetItems"
+  (delete) = "deleteItem($event)"
+  (totalAmountEvent) = "updateTotalAmount($event)"></app-budget-list>
 
 
 

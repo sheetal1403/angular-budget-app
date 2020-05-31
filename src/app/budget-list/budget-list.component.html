@@ -11,7 +11,8 @@
             [isIncome] = true
             [item] = "item"
             style="margin-bottom: 5px; display: block;"
-            (deleteItemEvent) = "deleteItem(item)"></app-budget-item-card>
+            (deleteItemEvent) = "deleteItem(item)"
+            (cardClick) = "onCardClick(item)"></app-budget-item-card>
           </div>
 
 
@@ -28,6 +29,7 @@
           [isIncome] = false
           [item] = "item"
           (deleteItemEvent) = "deleteItem(item)"
+          (cardClick) = "onCardClick(item)"
           style="margin-bottom: 5px; display: block;"></app-budget-item-card>
         </div>
       </div>
